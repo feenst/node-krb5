@@ -21,7 +21,7 @@
   },
   "scripts": {
     "prepublish": "./node_modules/.bin/coffee -b -o lib src",
-    "install": "node-gyp rebuild"
+    "install": "node-gyp rebuild --debug"
   },
   "author": {
     "name": "Pierre Sauvage"
