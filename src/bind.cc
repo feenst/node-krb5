@@ -63,7 +63,7 @@ void Krb5Wrap::New(const Nan::FunctionCallbackInfo<v8::Value>& info) {
   }
   else {
     // Invoked as plain function `MyObject(...)`, turn into construct call.
-    const int argc = 0;
+    const int argc = 1;
     v8::Local<v8::Value> argv[argc] = {};
     v8::Local<v8::Function> cons = Nan::New<v8::Function>(constructor);
     Nan::MaybeLocal<v8::Object> maybeInstance = Nan::NewInstance(cons, argc, argv);
